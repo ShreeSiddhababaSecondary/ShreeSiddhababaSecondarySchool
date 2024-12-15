@@ -1,0 +1,163 @@
+<!-- Code Copyright 2024 Kyubiks Label-->
+<!-- App Code Share Copyright To (Shree Siddhababa Secondary School Panityanki) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (Shree Siddhababa Secondary School) Class 1 to 12 Student -->
+<!-- Code Copyright 2024 Kyubiks Label -->
+<!-- App Code Share Copyright To (Shree Siddhababa Secondary School Panityanki) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNS Class 8 Notes (Kyubiks)</title>
+    <link rel="stylesheet" href="StyleCode/style.css" />
+    <link rel="icon" type="image/png" href="image/logo.png">
+</head>
+<body>
+
+<script>
+    //code for hide link and show
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.toggle-link');
+    links.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default link behavior
+            const description = this.nextElementSibling;
+            if (description.style.display === 'none' || description.style.display) {
+                description.style.display = 'block';
+            } else {
+                description.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
+
+  <!-- Header and Navbar -->
+  <header>
+    <nav id="navbar">
+        <a href="Kyubiks/Kyubiks.html">Kyubiks</a>
+        <a href="Kyubiks/onlineshop.html">Online Shop</a>
+        <a href="subject.html">Subject</a>
+        <a href="../../Class.html"><label style="color:red;">Eight</label></a>
+        
+    </nav>
+  </header>
+
+  <!-- Bottom Fixed Navigation -->
+ <div id="bottomNav">
+    <a href="home.html">Note</a>
+    <a href="fullform.html">FullForm</a>
+    <a href="#"><label style="color:green;">ShortcutKey</label></a>
+    <a href="quiz.html">Quiz</a>
+  </div>
+
+<main>
+<center>
+<center><h1>Short Cut Key</h1></center>
+<section id="one">
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Short Cut Key</th>
+                <tH>Work</tH>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1) Ctrl + S </td>
+                <td>Save File</td>
+            </tr>
+
+            <tr></tr>
+                <td>2) Ctrl + Shift + Del</td>
+                <td>Permanent Delete</td>
+        </tr>
+
+            <tr></tr>
+                <td>3) Ctrl + C</td>
+                <td>Copy</td>
+            </tr>
+
+            <tr></tr>
+                <td>4) Ctrl + V</td>
+                <td>Paste</td>
+            </tr>
+
+            <tr></tr>
+                <td>5) Ctrl + Z</td>
+                <td>Undo</td>
+            </tr>
+
+            <tr></tr>
+                <td>6) Ctrl + Y</td>
+                <td>Redo</td>
+            </tr>
+
+            <tr></tr>
+                <td>7) Ctrl + Shift + N</td>
+                <td>Create New Folder</td>
+            </tr>
+
+            <tr></tr>
+                <td>8) Alt + F4</td>
+                <td>Shutdown</td>
+            </tr>
+
+            <tr></tr>
+                <td>9) F5</td>
+                <td>Refresh</td>
+            </tr>
+
+            <tr></tr>
+                <td>10) Ctrl + A</td>
+                <td>Select All</Select></td>
+            </tr>
+
+            <tr></tr>
+                <td>11) Ctrl + 0</td>
+                <td>Open Saved File</td>
+            </tr>
+
+            <tr></tr>
+                <td>12) Ctrl + N</td>
+                <td>New Drawing</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</center>    
+</main>
+<br><br><br><br>
+ 
+  <script>
+    let lastScrollTop = 0; // Store the last scroll position
+    const navbar = document.getElementById('navbar'); // Get the top navigation bar
+
+    // Add scroll event listener to hide or show the top navigation
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      // If the user scrolls down, hide the top navbar
+      if (currentScroll > lastScrollTop) {
+        navbar.style.top = "-60px"; // Hides the top navbar by moving it up
+      } else {
+        // If the user scrolls up, show the top navbar
+        navbar.style.top = "0"; // Shows the top navbar
+      }
+
+      // Add class to change the navbar background color when scrolled
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll values
+    });
+  </script>
+</body>
+</html>
