@@ -1,0 +1,132 @@
+<!-- Code Copyright 2024 Kyubiks Label-->
+<!-- App Code Share Copyright To (Shree Siddhababa Secondary School Panityanki) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<!-- App Developed For (Shree Siddhababa Secondary School) Class 1 to 12 Student -->
+<!-- Code Copyright 2024 Kyubiks Label -->
+<!-- App Code Share Copyright To (Shree Siddhababa Secondary School Panityanki) -->
+<!-- App Creator / Sponsors / Creators / Distribution : Kyubiks -->
+<html>
+ <head>
+  <title>Class Seven Computer App (Kyubiks)</title>
+  	<link href="image/icon/favicon.ico" rel="#"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <body onload="setTimeout(function(){window.location ='Class/Class.html';}, 3000)">
+            <link rel="stylesheet" href="styles.css">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
+
+      <style>
+            @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        body {
+            background-color:black;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        header {
+            margin-bottom: 0px;
+        }
+        
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+            color:black;
+            animation: fadeIn 2s ease-in-out 0.5s;
+            animation-fill-mode: both;
+        }
+
+        h2 {
+            font-size: 25px;
+            font-weight: 300;
+            margin: 0;
+            color:black;
+            animation: fadeIn 2s ease-in-out 0.5s;
+            animation-fill-mode: both;
+        }
+        
+        main {
+            font-size: 24px;
+            font-weight: 500;
+            animation: slideIn 1.5s ease-in-out 1s;
+            animation-fill-mode: both;
+        }
+        
+        .intro p {
+            margin: 10px 0;
+            color:black;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+        
+            main {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 250px) {
+            h2 {
+                font-size: 36px;
+            }
+        
+            main {
+                font-size: 18px;
+            }
+        }
+        
+        </style>
+        <body>
+            <header>
+                <img src="image/logo.jpg" alt="School Logo" class="logo animated">
+                <h1 class="animated">Shree Siddhababa <br>Secondary School</h1>
+                <br>
+                <h2 class="animated">App For (Student) Note</h2>
+                <h2 class="animated">Developed By Kyubiks</h2>
+            </header>
+            <main>
+                <div class="intro animated">
+                    <br>
+                </div>
+            </main>
+</html>
